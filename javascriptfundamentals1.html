@@ -2,8 +2,47 @@
 <head>
 	<title>JavaScript Fundamentals 1</title>
 	<link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+	<script type="text/javascript">
+		function onClickButton1() {
+			try {
+				var control = document.getElementById("idLabel");
+				control.innerHTML = "This text was added by Pedro Ontiveros.";
+			} catch (err) {
+				alert(err.message);
+			}
+		}
+
+		function onClickMessage() {
+			var textEdit = document.getElementById("idMessage");
+			alert(textEdit.value);
+		}
+
+		function onClickMessageClear(param) {
+			var textEdit  = document.getElementById(param);
+			textEdit.value = "";
+		}
+	</script>
 </head>
 <body>
-	Hello Pedro Ontiveros.
+	<div class="headerPage">
+		JavaScript Fundamentals 1
+	</div>
+	<div class="panel">
+		<input type="button" onclick="onClickButton1()" value="click here">
+		<br>
+		<label id="idLabel"></label>
+		<br>
+	</div>
+	<br>
+	<div class="panel">
+		<input type="text" placeholder="write your message here" style="width:300px;" id="idMessage">
+		<br><br>
+		<input type="button" onclick="onClickMessage()" value="Show Mesage">&nbsp&nbsp
+		<input type="button" value="clear" onclick="onClickMessageClear('idMessage')">
+	</div>
+	<br>
+	<div class="panel">
+		Third group!
+	</div>
 </body>
 </html>

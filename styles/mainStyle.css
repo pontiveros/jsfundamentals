@@ -14,8 +14,16 @@ a:visited {
 	color: aqua;
 }
 
+.headerPage {
+	padding: 10px;
+	font-size: 40px;
+	text-align: center;
+	font-family: courier;
+	color: #d3f3f0;
+}
+
 .panel {
-	background-color: #0C3060;
+	background-color: #0c3060;
 	border-style: none;;
 	border-radius: 10px;
 	padding: 10px;
