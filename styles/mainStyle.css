@@ -30,3 +30,12 @@ a:visited {
 	width: 80%;
 	margin: auto;
 }
+
+.editControl {
+	background-color: white;
+	color: navy;
+	border-radius: 5px;
+	padding: 5px;
+	border-style: none;
+	font-family: courier;
+}
