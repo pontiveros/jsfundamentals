@@ -57,7 +57,7 @@ function sampleVar1() {
     var funcs = []; // array declaration
     for (var i = 0; i < 10; i++) {
         funcs.push(function () {
-            console.log(i); // print the current value of i? .... NO!!!
+            console.log(i); // Print the current value of i? .... NO!!!
         });
     }
 
@@ -82,4 +82,18 @@ function sampleVar2() {
     funcs2.forEach(function (f) {
         f(); // check what is printing in console.
     });
+}
+
+exports.loopLetSample = () => {
+    let f2 = []; // Array declarations
+
+    for (let c = 0; c < 100; c++) {
+        f2.push(function () { // Add one function to each item.
+            console.log(c);
+        });
+    } 
+
+    f2.forEach((f3) => {
+        f3(); // Each function is invoked in this loop.
+    }); 
 }
