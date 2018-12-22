@@ -5,5 +5,5 @@ exports.testHexa = () => {
     let value = 15;
     console.log(value);
     value = value << 1;
-    console.log(value);
+    console.log(value); 
 };
