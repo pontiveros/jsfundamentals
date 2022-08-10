@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 exports.printMessage = (message) => {
     if (message != undefined) {
@@ -52,7 +52,6 @@ exports.fnEmptyParams = () => {
     }
 };
 
-
 exports.fnMath = (items) => {
     if (items.length > 1) {
         const r = Math.max(...items); // syntax how to send array as param into this function.
@@ -62,18 +61,27 @@ exports.fnMath = (items) => {
     }
 }
 
-function Person(name) {
-    this.name = name;
+function Person(name, code = 0, status =1) {
+    this.name   = name;
+    this.code   = code;
+    this.status = status; // status = 1 means "Active"
     return this;
 }
 
+let product = function someProduct() {
+    // empty
+};
+
 exports.fnTestFnObject = () => {
     var person1 = new Person("Pedro");
-    // var person2 = Person("Candelario"); // Error, comment this code 
+    var person2 = new Person("Candelario", 200); // new operator must be used to instance the objectin ECMAS 6
 
+    person1.code = 100;
     console.log(person1);
-    // console.log(person2);
+    console.log(person2);
+    console.log(product.name);
 };
+
 
 // Internals functions 
 

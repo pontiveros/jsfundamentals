@@ -8,9 +8,9 @@ const     jsobject = require('./jsobject.js');
 
 // testBlockBinding();
 // testStrings();
-testFunctions();
+// testFunctions();
 // testMath();
-// testObjects();
+testObjects();
 console.log('end of program!');
 
 // Functions 
@@ -28,33 +28,33 @@ function testFunctions() {
     const message = `Message from ${name}`;
     jsfunctions.printMessage(message);
 
-    let a = 1009; 
-    let b = 1928;
-    console.log(jsfunctions.defaultParamters(a, b));
-    console.log("Default parameters");
-    console.log(jsfunctions.defaultParamters());
+    // let a = 1009; 
+    // let b = 1928;
+    // console.log(jsfunctions.defaultParamters(a, b));
+    // console.log("Default parameters");
+    // console.log(jsfunctions.defaultParamters());
 
-    jsfunctions.callbackMethod("Pedro", 762, (message = "empty") => {
-        console.log(message);
-    });
+    // jsfunctions.callbackMethod("Pedro", 762, (message = "empty") => {
+    //     console.log(message);
+    // });
 
-    console.log("Function Serie 1 ");
-    let r1 = jsfunctions.fnSeriesParam1([1,2,4,8,6,9]);
-    console.log(`result 1: ${r1}`);
+    // console.log("Function Serie 1 ");
+    // let r1 = jsfunctions.fnSeriesParam1([1,2,4,8,6,9]);
+    // console.log(`result 1: ${r1}`);
 
-    console.log("Function Serie 2");
-    // let r2 = jsfunctions.fnSeriesParam2(1, 9, -12, -28, 99);
-    let r2 = jsfunctions.fnSeriesParam2(-28, 99);
-    console.log(`result 2: ${r2}`);
+    // console.log("Function Serie 2");
+    // // let r2 = jsfunctions.fnSeriesParam2(1, 9, -12, -28, 99);
+    // let r2 = jsfunctions.fnSeriesParam2(-28, 99);
+    // console.log(`result 2: ${r2}`);
 
-    console.log("Function Series 2 B");
-    let r3 = jsfunctions.fnSeriesParam2(9);
-    console.log(`result 2: ${r3}`);
+    // console.log("Function Series 2 B");
+    // let r3 = jsfunctions.fnSeriesParam2(9);
+    // console.log(`result 2: ${r3}`);
 
-    console.log("Default param as undefined");
-    jsfunctions.fnDefaultParamUndefined(10, undefined, (res) => {
-        console.log(`Result is equql to ${res}`);
-    });
+    // console.log("Default param as undefined");
+    // jsfunctions.fnDefaultParamUndefined(10, undefined, (res) => {
+    //     console.log(`Result is equql to ${res}`);
+    // });
 
     // console.log("************* Analyzing function params *************");
     // jsfunctions.fnEmptyParams();
@@ -81,6 +81,8 @@ function testMath() {
 }
 
 function testObjects() {
-    jsobject.objCreateBasicObject();
-    jsobject.testObjectParams();
+    // jsobject.objCreateBasicObject();
+    // jsobject.testObjectParams();
+    // jsobject.objInstance(1);
+    jsobject.customerInfo();
 }
